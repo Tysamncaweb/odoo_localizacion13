@@ -16,7 +16,5 @@
             'views/private_information_views.xml',
             ],
         'installable': True,
-        'application:': False,
-        'auto_install': True,
         
         }
