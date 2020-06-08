@@ -13,7 +13,7 @@
 					<field name="age"/>
 					<field name="gender"/>
 					<field name="rif"/>
-					<field name="hand" string="Dominancia"/>
+					<field name="hand"/>
 				</group>
 				<group string="Address">
 					<field name="state_residence_id"/>
