@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="private_information_view_form" model="ir.ui.view">
+		<field name="name">private.information.view.form</field>
+		<field name="model">hr.employee</field>
+		<field name="inherit_id" ref="hr.view_employee_form"/>
+		<field name="arch" type="xml">
+		    <xpath expr="//notebook/page[2]/group/group[1]" position="replace">
+				<group string="Personal Information">
+					<field name="country_birth_id"/>
+					<field name="state_birth_id"/>
+					<field name="city_birth_id"/>
+					<field name="age"/>
+					<field name="gender"/>
+					<field name="rif"/>
+					<field name="hand"/>
+				</group>
+				<group string="Address">
+					<field name="state_residence_id"/>
+					<field name="city_residence_id"/>
+					<field name="residence_municipality"/>
+					<field name="avenue_street"/>
+					<field name="postal_code"/>
+					<field name="building_house"/>
+					<field name="apartment"/>
+					<field name="floor"/>
+					<field name="mobile_phone"/>
+				</group>
+		    </xpath>
+			<xpath expr="//notebook/page[2]/group/group[3]/field[@name='gender']" position="attributes">
+			    <field name="gender" position="attributes">
+                    <attribute name="invisible">1</attribute>
+			    </field>
+			</xpath>
+	        <xpath expr="//notebook/page[2]/group/group[4]" position="inside">
+				<field name="marriage_certificate"/>
+		    </xpath>
+	        <xpath expr="//notebook/page[2]/group/group[7]" position="after">
+			    <group string='Other Information'>
+				    <field name="shoes_size"/>
+				    <field name="height"/>
+				    <field name="weight"/>
+					<field name="disable_employee"/>
+			    </group>
+		    </xpath>
+		    <xpath expr="//page[@name='personal_information']" position="after">
+			    <page name="medical_information" string="Medical Information">
+			        <group col="4" string="Medical Information">
+					    <field name="blood_group"/>
+					    <field name="hr_factor"/>
+				    </group>
+			    </page>
+		    </xpath>
+			<xpath expr="//page[@name='hr_settings']" position="before">
+			    <page name="hhrr_use" string="HR Data">
+				    <group>
+				        <group string="Resignation / Dismissal">
+					        <field name="resignation"/>
+					    	<field name='observation'/>
+				        </group>
+					    <group string="Contract Terms">
+					        <field name="date_start"/>
+					    	<field name="date_end"/>
+					    </group>
+					    <group string='Seniority'>
+					        <field name="years"/>
+					        <field name="months"/>
+					        <field name="days"/>
+					    </group>
+						<group string="Transport">
+						    <field name="transport"/>
+							<field name="work_home_distance"/>
+						</group>
+						<group string="Leave">
+						    <field name="leave_types"/>
+						</group>
+                    </group>
+				</page>
+			</xpath>
+		</field> 
+	</record>
+</odoo>
+

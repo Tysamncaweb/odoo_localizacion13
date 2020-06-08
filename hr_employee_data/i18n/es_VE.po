@@ -1,0 +1,300 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_employee_data
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e-20200121\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-30 13:21+0000\n"
+"PO-Revision-Date: 2020-04-30 10:49-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_VE\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: hr_employee_data
+#: model:ir.model.fields.selection,name:hr_employee_data.selection__hr_employee__blood_group__ab
+msgid "AB"
+msgstr "AB"
+
+#. module: hr_employee_data
+#: model_terms:ir.ui.view,arch_db:hr_employee_data.private_information_view_form
+msgid "Address"
+msgstr "Dirección"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__age
+msgid "Age"
+msgstr "Edad"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__apartment
+msgid "Apartment"
+msgstr "Apartamento"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__avenue_street
+msgid "Avenue/street"
+msgstr "Avenida / Calle"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__blood_group
+msgid "Blood group"
+msgstr "Grupo sanguíneo"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__building_house
+msgid "Building/House"
+msgstr "Casa / Edificio"
+
+#. module: hr_employee_data
+#: model:ir.model.fields.selection,name:hr_employee_data.selection__hr_employee__transport__bus
+msgid "Bus"
+msgstr "Autobús"
+
+#. module: hr_employee_data
+#: model:ir.model.fields.selection,name:hr_employee_data.selection__hr_employee__transport__car
+msgid "Car"
+msgstr "Carro"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__city_birth_id
+msgid "City of birth"
+msgstr "Ciudad de nacimiento"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__city_residence_id
+msgid "City of residence"
+msgstr "Ciudad de residencia"
+
+#. module: hr_employee_data
+#: model_terms:ir.ui.view,arch_db:hr_employee_data.private_information_view_form
+msgid "Contract Terms"
+msgstr "Términos de contrato"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__country_birth_id
+msgid "Country of birth"
+msgstr "País de nacimiento"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__state_residence_id
+msgid "Country of residence"
+msgstr "País de residencia"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__date_end
+msgid "Date end"
+msgstr "Fecha final"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__date_start
+msgid "Date start"
+msgstr "Fecha de inicio"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__days
+msgid "Days"
+msgstr "Días"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__disable_employee
+msgid "Disable"
+msgstr "Discapacidad"
+
+#. module: hr_employee_data
+#: model:ir.model.fields.selection,name:hr_employee_data.selection__hr_employee__resignation__dismissal
+msgid "Dismissal"
+msgstr "Despido"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,help:hr_employee_data.field_hr_employee__work_home_distance
+msgid "Distance from home to work in km"
+msgstr "Distancia de la casa al trabajo"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__work_home_distance
+msgid "Distance home work"
+msgstr "Distancia del trabajo a la casa"
+
+#. module: hr_employee_data
+#: model:ir.model,name:hr_employee_data.model_hr_employee
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: hr_employee_data
+#: model:ir.model.fields.selection,name:hr_employee_data.selection__hr_employee__leave_types__excused_absences
+msgid "Excused Absences"
+msgstr "Ausencias justificadas"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__floor
+msgid "Floor"
+msgstr "Piso"
+
+#. module: hr_employee_data
+#: model_terms:ir.ui.view,arch_db:hr_employee_data.private_information_view_form
+msgid "HR Data"
+msgstr "Datos de RRHH"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__hand
+msgid "Hand"
+msgstr "Mano"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__height
+msgid "Height"
+msgstr "Estatura"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__hr_factor
+msgid "Hr factor"
+msgstr "Factor rh"
+
+#. module: hr_employee_data
+#: model_terms:ir.ui.view,arch_db:hr_employee_data.private_information_view_form
+msgid "Leave"
+msgstr "Ausencias"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__leave_types
+msgid "Leave types"
+msgstr "Tipos de Ausencias"
+
+#. module: hr_employee_data
+#: model:ir.model.fields.selection,name:hr_employee_data.selection__hr_employee__hand__left
+msgid "Left handed"
+msgstr "Zurdo"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__marriage_certificate
+msgid "Marriage certificate"
+msgstr "Certificado de matrimonio"
+
+#. module: hr_employee_data
+#: model_terms:ir.ui.view,arch_db:hr_employee_data.private_information_view_form
+msgid "Medical Information"
+msgstr "Información Médica"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__mobile_phone
+msgid "Mobile phone"
+msgstr "Teléfono movíl"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__months
+msgid "Months"
+msgstr "Meses"
+
+#. module: hr_employee_data
+#: model:ir.model.fields.selection,name:hr_employee_data.selection__hr_employee__transport__motorcircly
+msgid "Motorcicly"
+msgstr "Moto"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__residence_municipality
+msgid "Municipality"
+msgstr "Municipalidad"
+
+#. module: hr_employee_data
+#: model:ir.model.fields.selection,name:hr_employee_data.selection__hr_employee__hr_factor__negative
+msgid "Negative"
+msgstr "Negativo"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__observation
+msgid "Observation"
+msgstr "Observación"
+
+#. module: hr_employee_data
+#: model_terms:ir.ui.view,arch_db:hr_employee_data.private_information_view_form
+msgid "Other Information"
+msgstr "Otra Información"
+
+#. module: hr_employee_data
+#: model_terms:ir.ui.view,arch_db:hr_employee_data.private_information_view_form
+msgid "Personal Information"
+msgstr "Información Personal"
+
+#. module: hr_employee_data
+#: model:ir.model.fields.selection,name:hr_employee_data.selection__hr_employee__hr_factor__positive
+msgid "Positive"
+msgstr "Positivo"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__postal_code
+msgid "Postal code"
+msgstr "Código postal"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__rif
+msgid "RIF"
+msgstr "RIF"
+
+#. module: hr_employee_data
+#: model:ir.model.fields.selection,name:hr_employee_data.selection__hr_employee__resignation__resignation
+msgid "Resignation"
+msgstr "Renuncia"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__resignation
+#: model_terms:ir.ui.view,arch_db:hr_employee_data.private_information_view_form
+msgid "Resignation / Dismissal"
+msgstr "Renuncia / Despido"
+
+#. module: hr_employee_data
+#: model:ir.model.fields.selection,name:hr_employee_data.selection__hr_employee__hand__right
+msgid "Right Handed"
+msgstr "Diestro"
+
+#. module: hr_employee_data
+#: model_terms:ir.ui.view,arch_db:hr_employee_data.private_information_view_form
+msgid "Seniority"
+msgstr "Antigüedad"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__shoes_size
+msgid "Shoes size"
+msgstr "Talla de calzado"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__state_birth_id
+msgid "State of birth"
+msgstr "Estado de nacimiento"
+
+#. module: hr_employee_data
+#: model:ir.model.fields.selection,name:hr_employee_data.selection__hr_employee__transport__subway
+msgid "Subway"
+msgstr "Metro"
+
+#. module: hr_employee_data
+#: model:ir.model.fields.selection,name:hr_employee_data.selection__hr_employee__transport__train
+msgid "Train"
+msgstr "Tren"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__transport
+#: model_terms:ir.ui.view,arch_db:hr_employee_data.private_information_view_form
+msgid "Transport"
+msgstr "Transporte"
+
+#. module: hr_employee_data
+#: model:ir.model.fields.selection,name:hr_employee_data.selection__hr_employee__leave_types__unexcused_absences
+msgid "Unexcused Absences"
+msgstr "Ausencias Injustificadas"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__weight
+msgid "Weight"
+msgstr "Peso"
+
+#. module: hr_employee_data
+#: model:ir.model.fields,field_description:hr_employee_data.field_hr_employee__years
+msgid "Years"
+msgstr "Años"
