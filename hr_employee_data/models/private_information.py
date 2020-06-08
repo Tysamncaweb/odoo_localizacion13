@@ -60,4 +60,8 @@ class PrivateInformation(models.Model):
     leave_types = fields.Selection([
         ('excused_absences', 'Excused Absences'),
         ('unexcused_absences', 'Unexcused Absences')
+<<<<<<< HEAD
     ], string='Leave types')
+=======
+    ], string='Leave types')
+>>>>>>> 75a7a8031d08223fc1efcc009dbedb63d006b18e
