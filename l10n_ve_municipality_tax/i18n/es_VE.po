@@ -1,0 +1,211 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_ve_municipality_tax
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e-20200121\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-10 16:32+0000\n"
+"PO-Revision-Date: 2020-06-10 12:47-0400\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
+"Last-Translator: \n"
+"Language: es_VE\n"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_municipality__acc_date
+msgid "Accounting Date"
+msgstr "Fecha contable"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_muni_concepts__aliquot
+msgid "Aliquot"
+msgstr "Alícuota"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_muni_concepts__code
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_muni_concepts__name
+msgid "Concept"
+msgstr "Concepto"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields.selection,name:l10n_ve_municipality_tax.selection__wh_municipality__state__confirmed
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_muni_line_taxes__create_uid
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_muni_concepts__create_uid
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_municipality__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_muni_line_taxes__create_date
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_muni_concepts__create_date
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_municipality__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields.selection,name:l10n_ve_municipality_tax.selection__wh_municipality__type__out_invoice
+msgid "Customer Invoice"
+msgstr "Factura de cliente"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_muni_line_taxes__name
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_municipality__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_muni_line_taxes__display_name
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_muni_concepts__display_name
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_municipality__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields.selection,name:l10n_ve_municipality_tax.selection__wh_municipality__state__draft
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_muni_line_taxes__id
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_muni_concepts__id
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_municipality__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_muni_line_taxes__invoice_id
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_muni_line_taxes____last_update
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_muni_concepts____last_update
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_municipality____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_muni_line_taxes__write_uid
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_muni_concepts__write_uid
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_municipality__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_muni_line_taxes__write_date
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_muni_concepts__write_date
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_municipality__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.actions.act_window,name:l10n_ve_municipality_tax.action_muni_line_taxes
+#: model:ir.ui.menu,name:l10n_ve_municipality_tax.menu_municipality_tax_concepts
+msgid "Municipal Tax Application"
+msgstr "Aplicación de impuesto municipal"
+
+#. module: l10n_ve_municipality_tax
+#: model_terms:ir.ui.view,arch_db:l10n_ve_municipality_tax.muni_line_taxes_view_form
+msgid "Municipality Retention Concept"
+msgstr "Concepto de Retención Municipal"
+
+#. module: l10n_ve_municipality_tax
+#: model_terms:ir.ui.view,arch_db:l10n_ve_municipality_tax.wh_municipality_view_form
+#: model_terms:ir.ui.view,arch_db:l10n_ve_municipality_tax.wh_municipality_view_tree
+msgid "Municipality Tax"
+msgstr "Impuesto Municipal"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_municipality__muni_line_tax_ids
+msgid "Municipality Taxes"
+msgstr "Impuestos municipales"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_municipality__type
+msgid "Origin"
+msgstr "Origen"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_municipality__partner_id
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_municipality__rif
+msgid "RIF"
+msgstr "RIF"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_municipality__state
+msgid "Status"
+msgstr "Estatus"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields.selection,name:l10n_ve_municipality_tax.selection__wh_municipality__type__in_invoice
+msgid "Supplier Invoice"
+msgstr "Factura de Proveedor"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_wh_municipality__name
+msgid "Voucher number"
+msgstr "Número de comprobante"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_muni_line_taxes__wh_muni_id
+msgid "Withholding"
+msgstr "Retención"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.ui.menu,name:l10n_ve_municipality_tax.menu_municipality_tax_customers
+msgid "Withholding Municipal Tax for Customers"
+msgstr "Retención de Impuesto Municipal para Clientes"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.ui.menu,name:l10n_ve_municipality_tax.menu_municipality_tax_suppliers
+msgid "Withholding Municipal Tax for Suppliers"
+msgstr "Retención de Impuesto Municipal para Proveedores"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model.fields,help:l10n_ve_municipality_tax.field_wh_muni_concepts__name
+msgid "Withholding Municipality Concept."
+msgstr "Concepto de Retención Municipal"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.actions.act_window,name:l10n_ve_municipality_tax.action_wh_municipality_customer
+msgid "Withholding Tax for Customers"
+msgstr "Retención de Impuesto para Clientes"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.actions.act_window,name:l10n_ve_municipality_tax.action_wh_municipality_suppliers
+msgid "Withholding Tax for Suppliers"
+msgstr "Retención de Impuesto para Proveedores"
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model,name:l10n_ve_municipality_tax.model_muni_line_taxes
+msgid "muni.line.taxes"
+msgstr ""
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model,name:l10n_ve_municipality_tax.model_wh_muni_concepts
+#: model:ir.model.fields,field_description:l10n_ve_municipality_tax.field_muni_line_taxes__concept_id
+msgid "wh.muni.concepts"
+msgstr ""
+
+#. module: l10n_ve_municipality_tax
+#: model:ir.model,name:l10n_ve_municipality_tax.model_wh_municipality
+msgid "wh.municipality"
+msgstr ""

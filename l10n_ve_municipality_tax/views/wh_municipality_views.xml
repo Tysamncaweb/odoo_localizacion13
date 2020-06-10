@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="wh_municipality_view_form" model="ir.ui.view">
+		<field name="name">wh_municipality_view_form</field>
+		<field name="model">wh.municipality</field>
+		<field name="arch" type="xml">
+			<form string="Municipality Tax">
+			    <header>
+				   <field name="state" widget="statusbar"/>
+				</header>
+				<sheet>
+				    <div>
+                        <field name="name"/>
+				    </div>
+				    <group col="4">
+					    <field name="partner_id"/>
+						<field name="acc_date"/>
+				    </group>
+				    <group>
+					    <field name="rif"/>
+				    </group>
+				    <group>
+                        <field name="muni_line_tax_ids" nolabel="1"/>
+				    </group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+    <record id="wh_municipality_view_tree" model="ir.ui.view">
+		<field name="name">wh_municipality_view_tree</field>
+		<field name="model">wh.municipality</field>
+		<field name="arch" type="xml">
+			<tree string="Municipality Tax">
+                <field name="name"/>
+			    <field name="partner_id"/>
+				<field name="rif"/>
+			</tree>
+		</field>
+	</record>
+    
+
+	<record id="action_wh_municipality_suppliers" model="ir.actions.act_window">
+		<field name="name">Withholding Tax for Suppliers</field>
+		<field name="res_model">wh.municipality</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+    <record id="action_wh_municipality_customer" model="ir.actions.act_window">
+		<field name="name">Withholding Tax for Customers</field>
+		<field name="res_model">wh.municipality</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+    
+	<!-- Menu for all supplier retention -->
+	<menuitem 
+        id="menu_municipality_tax_suppliers"
+        name="Withholding Municipal Tax for Suppliers"
+        action="action_wh_municipality_suppliers"
+		parent="account.menu_finance_payables"
+    />
+
+    <!-- Menu for all customer retention -->
+    <menuitem 
+        id="menu_municipality_tax_customers"
+        name="Withholding Municipal Tax for Customers"
+        action="action_wh_municipality_customer"
+        parent="account.menu_finance_receivables"
+    />
+
+
+	<record id="muni_line_taxes_view_form" model="ir.ui.view">
+	    <field name="name">municipality.line.tax.view.form</field>
+		<field name="model">muni.line.taxes</field>
+		<field name="arch" type="xml">
+		    <form string="Municipality Retention Concept">
+			    <sheet>
+				    <group col="4">
+					    <field name="name"/>					
+				        <field name="concept_id"/>
+				    </group>
+					<group col="4">    
+					    <field name="wh_muni_id"/>
+					</group>
+					<group>
+					    <field name="invoice_id"/>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+    <record id="muni_line_taxes_view_tree" model="ir.ui.view">
+	    <field name="name">muni.line.taxes.view.tree</field>
+		<field name="model">muni.line.taxes</field>
+		<field name="arch" type="xml">
+            <tree>
+			    <field name="name"/>
+			    <field name="concept_id"/>
+			    <field name="invoice_id"/>
+		    </tree>
+		</field>
+	</record>
+
+
+    <record id="action_muni_line_taxes" model="ir.actions.act_window">
+		<field name="name">Municipal Tax Application</field>
+		<field name="res_model">muni.line.taxes</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+    
+    <menuitem 
+        id="menu_municipality_tax_concepts"
+        name="Municipal Tax Application"
+        action="action_muni_line_taxes"
+        parent="account.account_invoicing_menu"
+    />
+
+
+
+
+
+</odoo>
+

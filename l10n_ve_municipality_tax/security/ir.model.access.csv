@@ -1,0 +1,16 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_muni_line_taxes_ve,muni.line.taxes,model_muni_line_taxes,account.group_account_user,1,0,0,0
+access_muni_line_taxes_ve,muni.line.taxes,model_muni_line_taxes,account.group_account_manager,1,0,0,0
+access_muni_line_taxes_ve,muni.line.taxes,model_muni_line_taxes,base.group_user,1,0,0,0
+access_muni_line_taxes_ve,muni.line.taxes,model_muni_line_taxes,base.group_partner_manager,1,0,0,0
+access_muni_line_taxes_ve,muni.line.taxes,model_muni_line_taxes,account.group_account_invoice,1,1,1,1
+access_wh_municipality_ve,wh.municipality,model_wh_municipality,account.group_account_user,1,0,0,0
+access_wh_municipality_ve,wh.municipality,model_wh_municipality,account.group_account_manager,1,0,0,0
+access_wh_municipality_ve,wh.municipality,model_wh_municipality,base.group_user,1,0,0,0
+access_wh_municipality_ve,wh.municipality,model_wh_municipality,base.group_partner_manager,1,0,0,0
+access_wh_municipality_ve,wh.municipality,model_wh_municipality,account.group_account_invoice,1,1,1,1
+access_wh_muni_concepts_ve,wh.muni.concepts,model_wh_muni_concepts,account.group_account_user,1,0,0,0
+access_wh_muni_concepts_ve,wh.muni.concepts,model_wh_muni_concepts,account.group_account_manager,1,0,0,0
+access_wh_muni_concepts_ve,wh.muni.concepts,model_wh_muni_concepts,base.group_user,1,0,0,0
+access_wh_muni_concepts_ve,wh.muni.concepts,model_wh_muni_concepts,base.group_partner_manager,1,0,0,0
+access_wh_muni_concepts_ve,wh.muni.concepts,model_wh_muni_concepts,account.group_account_invoice,1,1,1,1
