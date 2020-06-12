@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_concept_retention_islr_ve,concept.retention.islr,model_concept_retention_islr,account.group_account_user,1,0,0,0 
+access_concept_retention_islr_ve,concept.retention.islr,model_concept_retention_islr,account.group_account_manager,1,1,1,1
+access_concept_retention_islr_ve,concept.retention.islr,model_concept_retention_islr,base.group_user,1,0,0,0
+access_concept_retention_islr_ve,concept.retention.islr,model_concept_retention_islr,base.group_partner_manager,1,0,0,0
+access_concept_retention_islr_ve,concept.retention.islr,model_concept_retention_islr,account.group_account_invoice,1,1,1,1
+access_islr_retention_rate_ve,islr.retention.rate,model_islr_retention_rate,account.group_account_user,1,0,0,0
+access_islr_retention_rate_ve,islr.retention.rate,model_islr_retention_rate,account.group_account_manager,1,1,1,1
+access_islr_retention_rate_ve,islr.retention.rate,model_islr_retention_rate,base.group_user,1,0,0,0
+access_islr_retention_rate_ve,islr.retention.rate,model_islr_retention_rate,base.group_partner_manager,1,0,0,0
+access_islr_retention_rate_ve,islr.retention.rate,model_islr_retention_rate,account.group_account_invoice,1,1,1,1
