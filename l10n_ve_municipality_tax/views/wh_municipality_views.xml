@@ -4,36 +4,49 @@
 		<field name="name">wh_municipality_view_form</field>
 		<field name="model">wh.municipality</field>
 		<field name="arch" type="xml">
-			<form string="Municipality Tax">
-			    <header>
-				   <field name="state" widget="statusbar"/>
+			<form string="Municipality">
+				<header>
+					<field name="state" widget="statusbar"/>
 				</header>
 				<sheet>
-				    <div>
-                        <field name="name"/>
-				    </div>
-				    <group col="4">
-					    <field name="partner_id"/>
+					<div class="oe_title">
+						<span class="o_form_label" style="font-weight:bold;">Withholding Receipt Number</span>
+						<h1>
+							<field name="name"/>
+						</h1>
+					</div>
+					<group col="4">
+						<field name="partner_id"/>
 						<field name="acc_date"/>
-				    </group>
-				    <group>
-					    <field name="rif"/>
-				    </group>
-				    <group>
-                        <field name="muni_line_tax_ids" nolabel="1"/>
-				    </group>
+					</group>
+					<group>
+						<field name="vat" string="RIF"/>
+						<field name="company_id"/>
+					</group>
+					<notebook>
+						<page string="Withholding">
+							<field name="muni_line_tax_ids" nolabel="1" widget="section_and_note_one2many">
+								<tree>
+									<field name="concept_id"/>
+									<field name="base_tax"/>
+									<field name="aliquot" string="Aliquot %"/>
+									<field name="wh_amount"/>
+								</tree>
+							</field>
+						</page>
+					</notebook>
 				</sheet>
 			</form>
 		</field>
 	</record>
-    <record id="wh_municipality_view_tree" model="ir.ui.view">
+	<record id="wh_municipality_view_tree" model="ir.ui.view">
 		<field name="name">wh_municipality_view_tree</field>
 		<field name="model">wh.municipality</field>
 		<field name="arch" type="xml">
 			<tree string="Municipality Tax">
-                <field name="name"/>
-			    <field name="partner_id"/>
-				<field name="rif"/>
+				<field name="name"/>
+				<field name="partner_id"/>
+				<field name="vat"/>
 			</tree>
 		</field>
 	</record>
@@ -67,37 +80,39 @@
         parent="account.menu_finance_receivables"
     />
 
-
-	<record id="muni_line_taxes_view_form" model="ir.ui.view">
+   <record id="muni_line_taxes_view_form" model="ir.ui.view">
 	    <field name="name">municipality.line.tax.view.form</field>
 		<field name="model">muni.line.taxes</field>
 		<field name="arch" type="xml">
 		    <form string="Municipality Retention Concept">
 			    <sheet>
 				    <group col="4">
-					    <field name="name"/>					
-				        <field name="concept_id"/>
+					    <field name="name"/>
+					    <field name="concept_id"/>
 				    </group>
-					<group col="4">    
+				    <group col="4">
 					    <field name="wh_muni_id"/>
-					</group>
-					<group>
+				    </group>
+				    <group>
 					    <field name="invoice_id"/>
-					</group>
-				</sheet>
-			</form>
-		</field>
-	</record>
-
-    <record id="muni_line_taxes_view_tree" model="ir.ui.view">
-	    <field name="name">muni.line.taxes.view.tree</field>
+				    </group>
+			    </sheet>
+		    </form>
+	    </field>
+    </record>
+	
+	<record id="muni_line_taxes_view_tree" model="ir.ui.view">
+		<field name="name">muni.line.taxes.view.tree</field>
 		<field name="model">muni.line.taxes</field>
 		<field name="arch" type="xml">
-            <tree>
-			    <field name="name"/>
-			    <field name="concept_id"/>
-			    <field name="invoice_id"/>
-		    </tree>
+			<tree string="Tax line">
+				<field name="name" invisible="1"/>
+				<field name="concept_id"/>
+				<field name="base_tax"/>
+				<field name="wh_amount"/>
+				<field name="aliquot"/>
+				<field name="invoice_id" invisible="1"/>
+			</tree>
 		</field>
 	</record>
 

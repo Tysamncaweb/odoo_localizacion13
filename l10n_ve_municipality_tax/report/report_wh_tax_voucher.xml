@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="template_wh_tax_voucher">
+		<t t-call="web.html_container">
+			<t t-foreach="docs" t-as="o">
+				<t t-call="web.basic_layout" t-lang="es_VE">
+					<div class="header">
+						<div class="col-4" style="margin-top: 20px; margin-bottom: 0px;">
+							<img t-attf-src="data:image/*;base64,{{o.company_id.logo}}" style="width:40%; height:15%;"/>
+						</div>
+						<div class="col-4" style="margin-top: 20px; margin-bottom: 0px;">
+							<table style="width:90.1%; margin-left:-8px;">
+								<tr>
+									<th>COMPROBANTE DE RETENCIÓN DEL IMPUESTO AL VALOR AGREGADO</th>
+								</tr>
+								<tr>
+									<td>LEY IVA - ART. 11: "SERÁN RESPONSABLES DEL PAGO DE IMPUESTO EN CALIDAD DE AGENTES DE RETENCIÓN, LOS COMPRADORES O ADQUIERENTES DE DETERMINADOS BIENES MUEBLES Y LOS RECEPTORES DE CIERTOS SERVICIOS A QUIENES LA ADMINISTRACIÓN TRIBUTARIA DESIGNE COMO TAL"</td>
+								</tr>
+							</table>
+						</div>
+
+					</div>
+					<div class="page">
+						<div class="row">
+							<div class="col-12">
+					                        <table>
+									<tr>
+										<td>TEST</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</t>
+			</t>
+		</t>
+	</template>
+
+
+
+	<!-- Paper format -->
+        <record id="paperformat_wh_voucher" model="report.paperformat">
+		<field name="name">Voucher of Municipal Withholding</field>
+		<field name="orientation">Landscape</field>
+		<field name="header_line" eval="False"/>
+	</record>
+
+
+
+
+
+	<report
+		id="action_wh_tax_voucher"
+		string="Withholding Voucher"
+		model="wh.municipality"
+		report_type="qweb-pdf"
+		name="l10n_ve_municipality_tax.template_wh_tax_voucher"
+		file="l10n_ve_municipality_tax.template_wh_tax_voucher"
+		paperformat="l10n_ve_municipality_tax.paperformat_wh_voucher"/>
+</odoo>

@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+#
+# Credits:
+# Coder: Ing. Alejandro Sanchez
+
 
 
 
@@ -23,6 +27,10 @@ class MuniLineTaxes(models.Model):
     wh_muni_id = fields.Many2one('wh.municipality', string='Withholding')
     concept_id = fields.Many2one('wh.muni.concepts', string='wh.muni.concepts')
     invoice_id = fields.Many2one('account.move', string='Invoice')
+    move_id = fields.Many2one('account.move', string='Account entry')
+    base_tax = fields.Float(string='Base tax')
+    wh_amount = fields.Float(string='Withheld amount')
+    aliquot = fields.Float(string='Aliquot')
 
 
 class WhMunicipality(models.Model):
@@ -32,7 +40,7 @@ class WhMunicipality(models.Model):
     name = fields.Char(string='Voucher number')
     description = fields.Char(string='Description')
     partner_id = fields.Many2one('res.partner', string="Partner")
-    rif = fields.Char(string='RIF')
+    vat = fields.Char(string='VAT')
     type = fields.Selection(selection=[
         ('out_invoice', 'Customer Invoice'),
         ('in_invoice', 'Supplier Invoice'),
@@ -43,3 +51,7 @@ class WhMunicipality(models.Model):
         ], string='Status')
     acc_date = fields.Date(string="Accounting Date")
     muni_line_tax_ids = fields.One2many('muni.line.taxes', 'wh_muni_id', string='Municipality Taxes')
+    company_id = fields.Many2one('res.company', string='Company')
+
+    # Campos a eliminar
+    #rif = fields.Char(string='RIF')
