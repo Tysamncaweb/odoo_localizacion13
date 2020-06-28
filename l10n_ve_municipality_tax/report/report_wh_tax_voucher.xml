@@ -5,18 +5,26 @@
 			<t t-foreach="docs" t-as="o">
 				<t t-call="web.basic_layout" t-lang="es_VE">
 					<div class="header">
-						<div class="col-4" style="margin-top: 20px; margin-bottom: 0px;">
-							<img t-attf-src="data:image/*;base64,{{o.company_id.logo}}" style="width:40%; height:15%;"/>
-						</div>
-						<div class="col-4" style="margin-top: 20px; margin-bottom: 0px;">
-							<table style="width:90.1%; margin-left:-8px;">
-								<tr>
-									<th>COMPROBANTE DE RETENCIÓN DEL IMPUESTO AL VALOR AGREGADO</th>
-								</tr>
-								<tr>
-									<td>LEY IVA - ART. 11: "SERÁN RESPONSABLES DEL PAGO DE IMPUESTO EN CALIDAD DE AGENTES DE RETENCIÓN, LOS COMPRADORES O ADQUIERENTES DE DETERMINADOS BIENES MUEBLES Y LOS RECEPTORES DE CIERTOS SERVICIOS A QUIENES LA ADMINISTRACIÓN TRIBUTARIA DESIGNE COMO TAL"</td>
-								</tr>
-							</table>
+						<div class="row">
+							<div class="col-4" style="margin-top: 20px; margin-bottom: 0px; border: 1px solid red;">
+								<t t-if="o.company_id.logo">
+									<img t-attf-src="data:image/*;base64,{{o.company_id.logo}}" style="width:40%; height:15%;"/>
+								</t>
+							</div>
+							<div class="col-6" style="border: 1px solid black; border-radius: 10px;">
+								<table style="width:100%; border: 1pt solid green; border-radius:8pt;">
+									<thead>
+										<tr>
+											<th>COMPROBANTE DE RETENCIÓN DEL IMPUESTO AL VALOR AGREGADO</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>LEY IVA - ART. 11: "SERÁN RESPONSABLES DEL PAGO DE IMPUESTO EN CALIDAD DE AGENTES DE RETENCIÓN, LOS COMPRADORES O ADQUIERENTES DE DETERMINADOS BIENES MUEBLES Y LOS RECEPTORES DE CIERTOS SERVICIOS A QUIENES LA ADMINISTRACIÓN TRIBUTARIA DESIGNE COMO TAL"</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</div>
 
 					</div>
