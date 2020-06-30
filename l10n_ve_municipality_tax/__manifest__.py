@@ -15,6 +15,7 @@
     'data': [
         'security/ir.model.access.csv',
         'views/wh_municipality_views.xml',
+        'views/account_move_views.xml',
         'report/report_wh_tax_voucher.xml',
         ],
     'installable': True,        

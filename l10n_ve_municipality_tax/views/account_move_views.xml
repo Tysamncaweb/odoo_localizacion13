@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="account_move_wh_muni_view_form" model="ir.ui.view">
+       <field name="name">account.move.wh.muni.view.form</field>
+       <field name="model">account.move</field>
+       <field name="inherit_id" ref="account.view_move_form"/>
+       <field name="arch" type="xml">
+           <xpath expr="//page[2]" position="after">
+               <page string="Withholdings">
+                    <separator string="Municipal Retention"/>
+                    <field name="wh_muni_id"/>
+                    <separator string="VAT Withholding"/>
+               </page>
+           </xpath>
+       </field>
+    </record>
+</odoo> 
