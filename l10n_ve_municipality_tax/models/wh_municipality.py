@@ -53,5 +53,6 @@ class WhMunicipality(models.Model):
     muni_line_tax_ids = fields.One2many('muni.line.taxes', 'wh_muni_id', string='Municipality Taxes')
     company_id = fields.Many2one('res.company', string='Company')
 
-    # Campos a eliminar
-    #rif = fields.Char(string='RIF')
+
+    def send_by_email(self):
+        pass
